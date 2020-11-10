@@ -295,6 +295,16 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  animation: fly 12s linear infinite;
+  animation-delay: calc(var(--i) * -6s);
+}
+@keyframes fly {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .cloud {
   position: absolute;
@@ -386,4 +396,187 @@ body {
 }
 .cloud.b span:nth-child(4) {
   box-shadow: none;
+}
+
+/* 大风 */
+.wind {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  /* background-color: #fff; */
+}
+.wind.a {
+  top: 100px;
+  left: 40px;
+}
+.wind.b {
+  top: 140px;
+  left: 260px;
+}
+
+/* 大风纹理 */
+.wind span,
+.wind span::before,
+.wind span::after {
+  position: absolute;
+  background-color: #555;
+  height: 3px;
+}
+.wind span::before,
+.wind span::after {
+  content: "";
+}
+/* 为大风纹理添加阴影 */
+.wind span,
+.wind span::after {
+  box-shadow: 4px 4px 0 -1px var(--color3);
+}
+
+/* 大风纹理一 */
+.wind span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 40px;
+}
+.wind span:nth-child(1)::before {
+  width: 10px;
+  height: 10px;
+  left: -5px;
+  bottom: 0;
+  border: 3px solid #555;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent transparent #555 #555;
+  transform: rotate(45deg);
+}
+.wind span:nth-child(1)::after {
+  width: 10px;
+  top: 0;
+  left: 110%;
+}
+/* 大风纹理二 */
+.wind span:nth-child(2) {
+  top: 8px;
+  left: -20px;
+  width: 40px;
+}
+.wind span:nth-child(2)::before {
+  width: 10px;
+  height: 10px;
+  left: -5px;
+  bottom: 0;
+  border: 3px solid #555;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent transparent #555 #555;
+  transform: rotate(45deg);
+}
+.wind span:nth-child(2)::after {
+  width: 50px;
+  top: 0;
+  left: 110%;
+}
+/* 大风纹理三 */
+.wind span:nth-child(3) {
+  top: 15px;
+  left: 50px;
+  width: 10px;
+}
+.wind span:nth-child(3)::before {
+  width: 40px;
+  top: 0;
+  right: 140%;
+}
+.wind span:nth-child(3)::after {
+  width: 40px;
+  top: 0;
+  left: 140%;
+}
+/* 大风纹理四 */
+.wind span:nth-child(4) {
+  top: 20px;
+  left: 30px;
+  width: 40px;
+}
+.wind span:nth-child(4)::before {
+  width: 10px;
+  top: 0;
+  right: 120%;
+}
+.wind span:nth-child(4)::after {
+  width: 10px;
+  top: 0;
+  left: 120%;
+}
+
+/* 小风 */
+.wind_small {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+/* 小风纹理 */
+.wind_small span,
+.wind_small span::after {
+  position: absolute;
+  height: 3px;
+  background-color: #555;
+  box-shadow: 4px 4px 0 -1px var(--color3);
+}
+
+.wind_small span::after {
+  content: "";
+  width: 50%;
+  top: 0;
+  left: 120%;
+}
+.wind_small span:nth-child(1) {
+  top: 12px;
+  left: 5px;
+  width: 50px;
+}
+.wind_small span:nth-child(2) {
+  top: 32px;
+  left: 120px;
+  width: 20px;
+}
+.wind_small span:nth-child(3) {
+  top: 152px;
+  left: 120px;
+  width: 20px;
+}
+.wind_small span:nth-child(3)::after {
+  display: none;
+}
+.wind_small span:nth-child(4) {
+  top: 172px;
+  left: 60px;
+  width: 20px;
+}
+.wind_small span:nth-child(5) {
+  top: 60px;
+  left: 140px;
+  width: 10px;
+}
+.wind_small span:nth-child(5)::after {
+  display: none;
+}
+.wind_small span:nth-child(6) {
+  top: 20px;
+  left: 300px;
+  width: 30px;
+}
+.wind_small span:nth-child(7) {
+  top: 115px;
+  left: 330px;
+  width: 30px;
+}
+.wind_small span:nth-child(8) {
+  top: 170px;
+  left: 200px;
+  width: 10px;
+}
+.wind_small span:nth-child(8)::after {
+  display: none;
 }
