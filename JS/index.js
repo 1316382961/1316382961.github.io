@@ -18,7 +18,7 @@ swch.addEventListener ("click",(e)=>{
     }else{
         // 增加样式
         swch.classList.add("switched");
-        alert("开启快乐每一天");
+        // alert("开启快乐每一天");
     }
 })
 
