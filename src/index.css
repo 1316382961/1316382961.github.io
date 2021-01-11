@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 17px;
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: #808080;
+  background-color: black;
+}
+* a:link {
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 855px) {
+  #lang {
+    display: none;
+  }
+  #search {
+    display: none;
+  }
+  #text {
+    display: none;
+  }
+  #footer {
+    display: none;
+  }
+  i {
+    width: 150px;
+  }
+  #red {
+    width: 100%;
+  }
+  #img {
+    display: none;
+  }
+  #all li:nth-child(2) {
+    display: none;
+  }
+  #all li:nth-child(3) {
+    display: none;
+  }
+  #all li:nth-child(4) {
+    display: none;
+  }
+  #all li:nth-child(5) {
+    display: none;
+  }
+  #all li:nth-child(1) {
+    border-bottom: 1px solid #808080;
+    margin-top: 20px;
+  }
+  img {
+    height: auto;
+    width: auto\9;
+    width: 100%;
+  }
+  #all #abar a {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    left: 48%;
+    font-size: 18px;
+    line-height: -5px;
+  }
+  #dizhi {
+    width: 100%;
+    height: 400px;
+  }
+  #dizhi #Yhs {
+    border-bottom: 1px solid #ee1d24;
+  }
+  #dizhi #yinghua li {
+    display: inline-block;
+    width: 70px;
+    letter-spacing: 2px;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15px;
+    line-height: 40px;
+  }
+  #dizhi #yinghua li:nth-child(5) {
+    margin-top: 8px;
+  }
+  #dizhi #yinghua li:nth-child(9) {
+    margin-top: 8px;
+  }
+  #dizhi #yinghua li:nth-child(13) {
+    margin-top: 8px;
+  }
+  #dizhi #yinghua li:nth-child(17) {
+    margin-top: 8px;
+  }
+  #dizhi #yinghua li:nth-child(21) {
+    margin-top: 8px;
+  }
+  #dizhi #yinghua li:nth-child(25) {
+    margin-top: 8px;
+  }
+}
+@media only screen and (min-width: 855px) {
+  #S-text {
+    display: none;
+  }
+  #red {
+    display: none;
+  }
+  #dizhi {
+    display: none;
+  }
+  #bar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    border-bottom: 1px solid #ee1d24;
+    box-shadow: 10px, 0, 10px #ee1d24;
+    display: flex;
+  }
+  #img img {
+    width: 300px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  #als {
+    width: 500px;
+  }
+  #all {
+    display: flex;
+    color: #ee1d24;
+    line-height: 48px;
+  }
+  #all a {
+    display: block;
+    text-align: center;
+  }
+  #all a:hover {
+    background-color: #ee1d24;
+  }
+  #all li {
+    flex-grow: 1;
+  }
+  #search {
+    width: 20%;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    line-height: 48px;
+    text-align: center;
+    display: flex;
+  }
+  #search input {
+    border-radius: 50px;
+    border: none;
+    outline-style: none;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    margin-top: 3px;
+    background-color: white;
+  }
+  #search i {
+    margin-left: 10px;
+  }
+  #lang {
+    width: 10%;
+  }
+  #language {
+    display: flex;
+  }
+  #language li {
+    flex-grow: 1 ;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    line-height: 48px;
+  }
+  #main {
+    width: 100%;
+  }
+  #imgs {
+    height: 420px;
+    border-bottom: 1px solid #ee1d24;
+  }
+  #imgs img {
+    width: 671px;
+    height: 375px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 48%;
+    top: 27px;
+    border: 0;
+    cursor: pointer;
+  }
+  #imgs #point li {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    z-index: 1;
+    top: 420px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+  #imgs #point li:nth-child(1) {
+    left: 70%;
+  }
+  #imgs #point li:nth-child(2) {
+    left: 72%;
+  }
+  #imgs #point li:nth-child(3) {
+    left: 74%;
+  }
+  #imgs #point li:nth-child(4) {
+    left: 76%;
+  }
+  #imgs #point li:nth-child(5) {
+    left: 78%;
+  }
+  #imgs #point li:hover {
+    background-color: #ee1d24 !important;
+  }
+  #text {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 300px;
+    width: 40%;
+    position: absolute;
+    left: 70px;
+    text-align: center;
+    top: 100px;
+    border-radius: 50px;
+  }
+  #text #prologue {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    width: 100%;
+    height: 300px;
+  }
+  #text #prologue #X {
+    display: none;
+    background-color: #808080;
+    color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+  #text #prologue #BU {
+    display: none;
+    background-color: #808080;
+    color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+  }
+  #text #prologue #CT {
+    display: none;
+    background-color: #808080;
+    color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+  }
+  #text #prologue #TZM {
+    display: none;
+    background-color: #808080;
+    color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+  }
+  #text #prologue #WR {
+    display: none;
+    background-color: #808080;
+    color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+  }
+  #text #prologue #prologues {
+    background-color: #808080;
+    color: black;
+    border-radius: 50px;
+    justify-content: center;
+  }
+  #text #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+    background-color: transparent ;
+    position: absolute;
+    left: 350px;
+  }
+  #text #triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    background-color: transparent ;
+    position: absolute;
+    top: 290px;
+    left: 150px;
+  }
+  #text #next {
+    position: absolute;
+    top: 275px;
+    left: 77%;
+    font-size: 14px;
+    background-color: transparent;
+    color: black;
+  }
+  #text #next:hover {
+    color: #ee1d24 !important;
+    cursor: pointer;
+  }
+  #text #previous {
+    position: absolute;
+    top: 275px;
+    left: 10%;
+    font-size: 14px;
+    background-color: transparent;
+    color: black;
+  }
+  #text #previous:hover {
+    color: #ee1d24 !important;
+    cursor: pointer;
+  }
+  #footer h1 {
+    position: relative;
+    top: 20px;
+  }
+  #footer h1 span {
+    color: #ee1d24;
+  }
+}
+/*# sourceMappingURL=./index.css.map */
